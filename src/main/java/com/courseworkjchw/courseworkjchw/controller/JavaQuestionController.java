@@ -1,7 +1,7 @@
 package com.courseworkjchw.courseworkjchw.controller;
 
-import com.courseworkjc.courseworkjc.model.Question;
-import com.courseworkjc.courseworkjc.service.api.QuestionService;
+import com.courseworkjchw.courseworkjchw.model.Question;
+import com.courseworkjchw.courseworkjchw.servise.api.QuestionService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
