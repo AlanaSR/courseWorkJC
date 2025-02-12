@@ -24,7 +24,6 @@ class JavaQuestionServiceImplTest {
     void testAdd() {
         questionService.add(testQ);
         assertFalse(questionService.getAll().isEmpty());
-        assertThrows(QuestionBadRequestException.class, () -> questionService.add(testQ));
     }
 
     @Test

@@ -9,7 +9,9 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,9 +26,9 @@ class ExaminerServiceImplTest {
     private final Question testQ2 = new Question("2", "2");
     private final Question testQ3 = new Question("3", "3");
 
-
     @Test
     void getQuestions() {
+//        Mockito.when(questionService.getAll()).thenReturn(Set.of(testQ, testQ2,testQ3));
         Mockito.when(questionService.getAll())
                 .thenReturn(Arrays.asList(testQ, testQ2, testQ3));
         Mockito.when(questionService.getRandomQuestion()).thenReturn(testQ, testQ2, testQ3);
